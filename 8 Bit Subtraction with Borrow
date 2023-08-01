@@ -1,0 +1,7 @@
+;Subtraction with borrow
+LDA 2000
+MOV B,A
+LDA 2001
+SBB B
+STA 2002
+HLT
