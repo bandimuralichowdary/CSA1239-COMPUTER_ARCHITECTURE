@@ -1,0 +1,7 @@
+;1'S and 2'S Complement
+LDA 4000
+CMA
+STA 4001
+ADI 01
+STA 4002
+HLT
