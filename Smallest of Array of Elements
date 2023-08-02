@@ -1,0 +1,14 @@
+;Smallest in a Array of Numbers
+LXI H,4200
+MOV B,M
+INX H
+MOV A,M
+DCR B
+LOOP: INX H
+CMP M
+JC LOOP1
+MOV A,M
+LOOP1: DCR B
+JNZ LOOP
+STA 4210
+HLT
