@@ -1,0 +1,9 @@
+;Square of a number
+LXI H,8000
+MVI A,00
+MOV B,M
+LOOP: ADD M
+DCR B
+JNZ LOOP
+STA 8001
+HLT
