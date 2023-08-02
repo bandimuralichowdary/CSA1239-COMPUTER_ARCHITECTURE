@@ -1,0 +1,9 @@
+;Swapping of 2 numbers
+LDA 2000
+MOV B,A
+LDA 2001
+MOV C,A
+STA 2003
+MOV A,B
+STA 2004
+HLT
