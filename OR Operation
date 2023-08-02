@@ -1,0 +1,6 @@
+;OR operation
+MVI A,07
+MVI B,06
+ORA B
+STA 2500
+HLT
