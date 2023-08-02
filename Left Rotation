@@ -1,0 +1,13 @@
+;Left Rotation without carry
+;Moving last number to first
+;00100111 - RLC
+;>> 10010011 - RLC
+;>> 11001001 - RLC
+;>> 11100100  
+MVI A,02
+RLC
+RLC
+RLC
+RLC
+STA 2000
+HLT
