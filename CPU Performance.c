@@ -1,21 +1,18 @@
 //CPU PERFORMANCE
 #include <stdio.h>
-int main() 
-{
+int main() {
   float cr;
   int p,p1,i;
   float cpu[5];
   float cpi,ct,max;
   int n=1000;
-  for(i=0;i<=4;i++)
-  {
+  for(i=0;i<=4;i++){
       cpu[5]=0;
   }
   printf("\n Enter the number of processors:");
   scanf("%d",&p);
   p1=p;
-  for(i=0;i<p;i++)
-{
+  for(i=0;i<p;i++){
     printf("\n Enter the Cycles per Instrcution of processor:");
   scanf("%f",&cpi);
   printf("\n Enter the clockrate in GHz:");
@@ -25,8 +22,7 @@ int main()
   cpu[i]=ct;
 }
 max=cpu[0];
-for(i=0;i<p1;i++)
-{
+for(i=0;i<p1;i++){
     if(cpu[i]<=max)
     max=cpu[i];
 }
